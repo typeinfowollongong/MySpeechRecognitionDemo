@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.examples.typeinfo.myvoicerecognitionapp.MainActivity">
+
+    <Button
+        android:text="@string/button_text_to_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btTextToVoice"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="194dp" />
+
+    <Button
+        android:text="@string/button_voice_to_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btVoiceToText"
+        android:onClick="onClickVoiceToText"
+        android:layout_alignBottom="@+id/btTextToVoice"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp" />
+
+</RelativeLayout>
